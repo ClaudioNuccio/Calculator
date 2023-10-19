@@ -38,8 +38,6 @@ public class Operations {
         float[] divisione = new float[2];
         divisione[0] = a/b;
         divisione[1] = a%b;
-        System.out.println("il risultato é "+divisione[0]);
-        System.out.println("il resto é "+divisione[1]);
         return divisione;
     }
     public static void checkSegno (char segno){
@@ -69,7 +67,8 @@ public class Operations {
                 break;
             }
             case '/': {
-                System.out.println("Il risultato della divisione è " + divisione(a,b) );
+                System.out.println("Il risultato della divisione è " + divisione(a,b)[0] );
+                System.out.println("Il resto della divisione è " + divisione(a,b)[1]);
                 break;
             }
             case '^': {
