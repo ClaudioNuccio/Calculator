@@ -1,4 +1,6 @@
 
+import operations.Operations;
+
 import java.util.Scanner;
 public class Calcolatrice {
 
@@ -23,31 +25,7 @@ public class Calcolatrice {
             float a = scanner.nextFloat();
             System.out.println("Inserire il secondo numero");
             float b = scanner.nextFloat();
-            switch (segno) {
-                case '+': {
-                    System.out.println("Il risultato dell'addizione è" );
-                    break;
-                }
-                case '-': {
-                    System.out.println("Il risultato della sottrazione è" );
-                    break;
-                }
-                case '*': {
-                    System.out.println("Il risultato della moltiplicazione è ");
-                    break;
-                }
-                case '/': {
-                    System.out.println("Il risultato della divisione è" );
-                    break;
-                }
-                case '^': {
-                    System.out.println("Il risultato della potenza è" );
-                    break;
-                }
-                default:{
-                    System.out.println("Errore");
-                }
-            }
+            Operations.checkSegno(a, b, segno);
         }
     }
     public static void main(String[] args) {
