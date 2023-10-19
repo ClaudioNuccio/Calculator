@@ -2,11 +2,7 @@
 import java.util.Scanner;
 
 public class Calcolatrice {
-    public static float moltiplicazione (float a , float b){
-        float risultato = a * b;
-        return risultato;
 
-    }
     Scanner scanner = new Scanner(System.in);
     public static void calcolatrice () {
         Scanner scanner = new Scanner(System.in);
@@ -38,7 +34,7 @@ public class Calcolatrice {
                     break;
                 }
                 case '*': {
-                    System.out.println("Il risultato della moltiplicazione è " + moltiplicazione(a,b));
+                    System.out.println("Il risultato della moltiplicazione è ");
                     break;
                 }
                 case '/': {
