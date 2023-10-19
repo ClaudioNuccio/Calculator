@@ -1,6 +1,11 @@
 package operations;
 
 public class Operations {
+    public static float moltiplicazione (float a , float b){
+        float risultato = a * b;
+        return risultato;
+
+    }
 
     public static float Sum(float a, float b)
     {
