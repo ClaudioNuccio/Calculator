@@ -12,6 +12,11 @@ public class Operations {
         return a + b;
     }
 
+    public static float Subtraction(float a, float b)
+    {
+        return a - b;
+    }
+
     public static String isEvenOrUneven(int x){
         if( x%2 == 0){
             return "pari";
