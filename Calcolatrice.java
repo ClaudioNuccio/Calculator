@@ -3,8 +3,8 @@ package Calcolatrice.Calculator;
 import java.util.Scanner;
 
 public class Calcolatrice {
-    public static int moltiplicazione (int a , int b){
-        int risultato = a * b;
+    public static int moltiplicazione (float a , float b){
+        float risultato = a * b;
         return risultato;
 
     }
@@ -22,13 +22,13 @@ public class Calcolatrice {
         char segno = scanner.next().charAt(0);
         if (segno == '%') {
             System.out.println("Inserire il numero di cui si vuole sapere se è pari o dispari");
-            int a = scanner.nextInt();
+            float a = scanner.nextFloat();
 
         } else {
             System.out.println("Inserire il primo numero");
-            int a = scanner.nextInt();
+            float a = scanner.nextFloat();
             System.out.println("Inserire il secondo numero");
-            int b = scanner.nextInt();
+            float b = scanner.nextFloat();
             switch (segno) {
                 case '+': {
                     System.out.println("Il risultato dell'addizione è" );
