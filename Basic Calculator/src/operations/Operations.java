@@ -1,5 +1,7 @@
 package operations;
 
+import java.util.Scanner;
+
 public class Operations {
     public static float moltiplicazione (float a , float b){
         float risultato = a * b;
@@ -40,26 +42,38 @@ public class Operations {
         System.out.println("il resto é "+divisione[1]);
         return divisione;
     }
-    public static void checkSegno (float a, float b,char segno){
+    public static void checkSegno (char segno){
+        float a = 0.0F;
+        float b = 0.0F;
+        Scanner scanner = new Scanner(System.in);
+        if (segno == '%') {
+            System.out.println("Inserire il numero di cui si vuole sapere se è pari o dispari");
+            a = scanner.nextFloat();
+        } else {
+            System.out.println("Inserire il primo numero");
+            a = scanner.nextFloat();
+            System.out.println("Inserire il secondo numero");
+            b = scanner.nextFloat();
+        }
         switch (segno) {
             case '+': {
-                System.out.println("Il risultato dell'addizione è" );
+                System.out.println("Il risultato dell'addizione è" + Sum(a,b));
                 break;
             }
             case '-': {
-                System.out.println("Il risultato della sottrazione è" );
+                System.out.println("Il risultato della sottrazione è" + Subtraction(a,b));
                 break;
             }
             case '*': {
-                System.out.println("Il risultato della moltiplicazione è ");
+                System.out.println("Il risultato della moltiplicazione è " + moltiplicazione(a,b));
                 break;
             }
             case '/': {
-                System.out.println("Il risultato della divisione è" );
+                System.out.println("Il risultato della divisione è " + divisione(a,b) );
                 break;
             }
             case '^': {
-                System.out.println("Il risultato della potenza è" );
+                System.out.println("Il risultato della potenza è" + power((int)a,(int)b) );
                 break;
             }
             default:{

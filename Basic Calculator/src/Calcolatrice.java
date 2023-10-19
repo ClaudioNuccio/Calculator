@@ -16,18 +16,9 @@ public class Calcolatrice {
                 "% per sapere se è pari o dispari");
 
         char segno = scanner.next().charAt(0);
-        if (segno == '%') {
-            System.out.println("Inserire il numero di cui si vuole sapere se è pari o dispari");
-            float a = scanner.nextFloat();
-
-        } else {
-            System.out.println("Inserire il primo numero");
-            float a = scanner.nextFloat();
-            System.out.println("Inserire il secondo numero");
-            float b = scanner.nextFloat();
-            Operations.checkSegno(a, b, segno);
+            Operations.checkSegno(segno);
         }
-    }
+
     public static void main(String[] args) {
         calcolatrice();
 
