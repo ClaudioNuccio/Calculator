@@ -26,5 +26,14 @@ public class Operations {
         }
         return base;
     }
+    public static float [] divisione(float a, float b){
+
+        float[] divisione = new float[2];
+        divisione[0] = a/b;
+        divisione[1] = a%b;
+        System.out.println("il risultato é "+divisione[0]);
+        System.out.println("il resto é "+divisione[1]);
+        return divisione;
+    }
 }
 
