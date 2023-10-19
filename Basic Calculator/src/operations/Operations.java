@@ -40,5 +40,32 @@ public class Operations {
         System.out.println("il resto é "+divisione[1]);
         return divisione;
     }
+    public static void checkSegno (float a, float b,char segno){
+        switch (segno) {
+            case '+': {
+                System.out.println("Il risultato dell'addizione è" );
+                break;
+            }
+            case '-': {
+                System.out.println("Il risultato della sottrazione è" );
+                break;
+            }
+            case '*': {
+                System.out.println("Il risultato della moltiplicazione è ");
+                break;
+            }
+            case '/': {
+                System.out.println("Il risultato della divisione è" );
+                break;
+            }
+            case '^': {
+                System.out.println("Il risultato della potenza è" );
+                break;
+            }
+            default:{
+                System.out.println("Errore");
+            }
+        }
+    }
 }
 
