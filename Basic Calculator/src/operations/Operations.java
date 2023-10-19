@@ -7,3 +7,10 @@ public class Operations {
         return a + b;
     }
 }
+    public static String pariDispari(int x){
+        if(x%2==0){
+            return "pari";
+        } else {
+            return "dispari";
+        }
+    }
