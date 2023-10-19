@@ -47,6 +47,7 @@ public class Operations {
         if (segno == '%') {
             System.out.println("Inserire il numero di cui si vuole sapere se è pari o dispari");
             a = scanner.nextFloat();
+            isEvenOrUneven((int)a);
         } else {
             System.out.println("Inserire il primo numero");
             a = scanner.nextFloat();
