@@ -1,11 +1,11 @@
-package Calcolatrice.Calculator.Basic;
+package Calcolatrice.Calculator;
 
 import java.util.Scanner;
 
 public class Calcolatrice {
-    public static float moltiplicazione (float a , float b){
-       float risultato = a * b;
-       return risultato;
+    public static int moltiplicazione (int a , int b){
+        int risultato = a * b;
+        return risultato;
 
     }
     Scanner scanner = new Scanner(System.in);
@@ -22,13 +22,13 @@ public class Calcolatrice {
         char segno = scanner.next().charAt(0);
         if (segno == '%') {
             System.out.println("Inserire il numero di cui si vuole sapere se è pari o dispari");
-            float a = scanner.nextFloat();
+            int a = scanner.nextInt();
 
         } else {
             System.out.println("Inserire il primo numero");
-            float a = scanner.nextFloat();
+            int a = scanner.nextInt();
             System.out.println("Inserire il secondo numero");
-            float b = scanner.nextFloat();
+            int b = scanner.nextInt();
             switch (segno) {
                 case '+': {
                     System.out.println("Il risultato dell'addizione è" );
@@ -49,15 +49,15 @@ public class Calcolatrice {
                 case '^': {
                     System.out.println("Il risultato della potenza è" );
                     break;
-                    }
+                }
                 default:{
                     System.out.println("Errore");
                 }
-                }
             }
         }
+    }
     public static void main(String[] args) {
-calcolatrice();
+        calcolatrice();
 
     }
 }
