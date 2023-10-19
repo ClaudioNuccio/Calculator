@@ -34,7 +34,7 @@ public class Calcolatrice {
                     break;
                 }
                 case '*': {
-                    System.out.println("Il risultato della moltiplicazione è " );
+                    System.out.println("Il risultato della moltiplicazione è ");
                     break;
                 }
                 case '/': {
