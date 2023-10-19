@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aee1964-ceb3-4ae5-9fe1-03080da62536" name="Changes" comment="Creazione funzione pari e dispari">
-      <change beforePath="$PROJECT_DIR$/pariDispari.java" beforeDir="false" afterPath="$PROJECT_DIR$/pariDispari.java" afterDir="false" />
-    </list>
+    <list default="true" id="5aee1964-ceb3-4ae5-9fe1-03080da62536" name="Changes" comment="Creazione funzione pari e dispari" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,18 +25,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN",
-      "author": "AlessandroCiaccio"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;author&quot;: &quot;AlessandroCiaccio&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN",
-    "author": "AlessandroCiaccio"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;author&quot;: &quot;AlessandroCiaccio&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -54,6 +52,7 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2WvZq4FBvH0ep9wDSznlkO8eh5t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -62,7 +61,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/ciacc/IdeaProjects/Calculator",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
