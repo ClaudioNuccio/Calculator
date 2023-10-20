@@ -93,7 +93,6 @@ public class Operations {
             default:
                 return false;
         }
-        return false;
     }
 }
 
