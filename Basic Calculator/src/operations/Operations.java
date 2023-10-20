@@ -2,6 +2,7 @@ package operations;
 
 import java.util.Scanner;
 
+
 public class Operations {
     public static float moltiplicazione (float a , float b){
         float risultato = a * b;
@@ -40,46 +41,59 @@ public class Operations {
         divisione[1] = a%b;
         return divisione;
     }
-    public static void checkSegno (char segno){
-        float a = 0.0F;
-        float b = 0.0F;
-        Scanner scanner = new Scanner(System.in);
-        if (segno == '%') {
-            System.out.println("Inserire il numero di cui si vuole sapere se è pari o dispari");
-            a = scanner.nextFloat();
-            isEvenOrUneven((int)a);
-        } else {
-            System.out.println("Inserire il primo numero");
-            a = scanner.nextFloat();
-            System.out.println("Inserire il secondo numero");
-            b = scanner.nextFloat();
-        }
-        switch (segno) {
-            case '+': {
-                System.out.println("Il risultato dell'addizione è" + Sum(a,b));
-                break;
-            }
-            case '-': {
-                System.out.println("Il risultato della sottrazione è" + Subtraction(a,b));
-                break;
-            }
-            case '*': {
-                System.out.println("Il risultato della moltiplicazione è " + moltiplicazione(a,b));
-                break;
-            }
-            case '/': {
-                System.out.println("Il risultato della divisione è " + divisione(a,b)[0] );
+    public static void Eval(char op, float a, float b)
+    {
+        switch (op)
+        {
+            case '+':
+            {
+                System.out.println("Il risultato dell'addizione tra " + a + " e " + b +" è " + Sum(a,b));
+            }break;
+            case '-':
+            {
+                System.out.println("Il risultato della sottrazione tra " + a + " e " + b +" è " + Subtraction(a,b));
+            }break;
+            case '*':
+            {
+                System.out.println("Il risultato della moltiplicazione tra " + a + " e " + b +" è " + moltiplicazione(a,b));
+
+            }break;
+            case '/':
+            {
+                System.out.println("Il risultato della divisione tra " + a + " e " + b +" è " + divisione(a,b)[0] );
                 System.out.println("Il resto della divisione è " + divisione(a,b)[1]);
-                break;
-            }
-            case '^': {
-                System.out.println("Il risultato della potenza è" + power((int)a,(int)b) );
-                break;
-            }
-            default:{
+            }break;
+            case '^':
+            {
+                int newa = (int)a;
+                int newb = (int)b;
+                System.out.println("Il risultato della potenza tra " + newa + " e " + newb +" è " + power(newa,newb));
+            }break;
+            case '%':
+            {
+                System.out.println("Il numero " + (int)a + " è " + isEvenOrUneven((int)a));
+            }break;
+            default:
+            {
                 System.out.println("Errore");
-            }
+            }break;
         }
+    }
+    public static Boolean IsOpValid(char op)
+    {
+        switch(op)
+        {
+            case '+':
+            case '*':
+            case '/':
+            case '-':
+            case '^':
+            case '%':
+                return true;
+            default:
+                return false;
+        }
+        return false;
     }
 }
 
